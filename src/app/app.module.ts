@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -13,6 +14,18 @@ import { FotosComponent } from './fotos/fotos.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { DisclaimerComponent } from './disclaimer/disclaimer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
+const appRoutes: Routes = [
+  {path: '', component: HomeComponent},
+  {path: 'home', component: HomeComponent},
+  {path: 'veranstaltungen', component: VeranstaltungenComponent},
+  {path: 'vereinsinfo', component: VereinsinfoComponent},
+  {path: 'chronik', component: ChronikComponent},
+  {path: 'gedenken', component: GedenkenComponent},
+  {path: 'fotos', component: FotosComponent},
+  {path: 'impressum', component: ImpressumComponent},
+]
 
 
 @NgModule({
@@ -30,7 +43,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: true } // <-- debugging purposes only
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]
