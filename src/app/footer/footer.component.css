@@ -1,0 +1,14 @@
+div .column
+{
+margin-right: 200px;
+}
+
+div .row
+{
+height: 30px
+}
+
+div .column a
+{
+    color: white;
+}
