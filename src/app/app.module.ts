@@ -14,7 +14,7 @@ import { FotosComponent } from './fotos/fotos.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { DisclaimerComponent } from './disclaimer/disclaimer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { FooterComponent } from './footer/footer.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -39,6 +39,7 @@ const appRoutes: Routes = [
     FotosComponent,
     ImpressumComponent,
     NavbarComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
