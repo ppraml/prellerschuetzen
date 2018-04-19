@@ -1,3 +1,18 @@
+
+div .column
+{
+margin-right: 200px;
+}
+
+div .row
+{
+height: 30px
+}
+
+div .column a
+{
+    color: white;
+}
 footer {
     background-color: #343a40;
     height: 15%;
