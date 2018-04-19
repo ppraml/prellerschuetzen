@@ -1,6 +1,7 @@
 footer {
     background-color: #343a40;
-    height: 250pt;
+    height: 15%;
+    position: fixed
 }
 
 p {
