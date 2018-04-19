@@ -1,3 +1,4 @@
+
 div .column
 {
 margin-right: 200px;
@@ -11,4 +12,16 @@ height: 30px
 div .column a
 {
     color: white;
+}
+footer {
+    background-color: #343a40;
+    height: 15%;
+}
+
+p {
+    height: 3%;
+}
+
+a {
+    color: #fff;
 }
