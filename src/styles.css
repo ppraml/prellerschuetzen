@@ -1,4 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+/*
+* Farbcodes für die Webseite (32: https://www.canva.com/learn/website-color-schemes/)
+* containerBackround1: #479761
+* containerBackround2: #C7D8C6
+* containerBackround3: #EFD9C1
+* containerBackround4: #1B7B34
+* TextColorDark:       #19181A
+* DarkGrey:            #A16E83
+* BrightGrey:          #B19F9E
+*/
+body {
+    background-color: #FFF;
+    color: #19181a;
+}
 html {
     position: relative;
     min-height: 100%;
@@ -17,4 +31,3 @@ html {
     background-color:#343a40;
     color: white;
   }
-  
