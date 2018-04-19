@@ -1,15 +1,31 @@
-<div class="container">
-  <br /><div>
-  <img class="img-respnive" align="left" src="assets/pictures/schuetzenheim2.png" height="320" />
-  <br /><br /><br /><br /><br />
-  <h2 align="middle">Preller Schuetzen Neuhausen</h2>
-  <h6 align="middle">gegr. 1959</h6>
-  <h4 align="middle">Wir wünschen allzeit "Gut Schuss"</h4>
+<div
+        ng2-carouselamos
+        class="slides-wrapper"
+        [items]="items"
+        [width]="960"
+        [$prev]="prev"
+        [$next]="next"
+        [$item]="item"
+      >
+</div>
+<ng-template #prev>
+      <span class="fa fa-chevron-left fa-lg"id="left"></span>
+    </ng-template>
+    <ng-template #next>
+      <span class="fa fa-chevron-right fa-lg"id="left"></span>
+    </ng-template>
+    <ng-template #item let-item let-i="index">
+        <div class="items">
+          <img src="{{ item.name }}">
+        </div>
+</ng-template>
+<br>
+<div class="container" id="mainHomeContainer">
+          <h1 align="center">Willkommen</h1>
+          <!-- Texteanpassen -->
+          <p>Krasser Willkommenstext</p>
+  <div class="container" id="newslistContainer">
+      <app-newslist></app-newslist>
   </div>
 </div>
-<br />
-<div class="container">
-  
-  <h4 align="middle">Hier finden Sie:</h4>
-  <p align="center">Informationen über das Vereinsleben, aktuelle Veranstaltungen, Geschichte des Vereins, Gaurundenergebnisse und vieles mehr.</p>
-</div>
+     
