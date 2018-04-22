@@ -1,3 +1,53 @@
-<p>
-  veranstaltungen works!
-</p>
+<!--
+  activeIds: static-1 soll immer bei aktuellen jahr gesetzt werden sonst alle id's static 2!
+  static-1: wird sofort angezeigt ohne aufklappen
+  static-2: vergangene jahre
+  panel erstellen:
+  <ngb-panel id="static-2" title="Weitere Informationen">
+  <ng-template ngbPanelContent>
+    {hier content ohne klammern! oder weitere panels einbauen für die jeweiligen veranstaltungen}
+  </ng-template>
+</ngb-panel>
+
+Veranstaltungen: Veranstaltungen werden immer volgendermassen aufgebaut
+        <p>April</p>
+            <div class="container">
+                <p>Veranstaltung</p>
+            </div>
+  <p>: gibt immer den jeweiligen Monat an
+      <div>: im container stehen dann aufgelistet in weiteren <p> die einzelnen Veranstaltungen
+ -->
+<div class="container" id="veranstaltungsContainer">
+<h3>Veranstaltungen</h3>
+<p>Hier finden Sie alle unsere Veranstaltungen und Termine</p>
+<div class="container">
+  <ngb-accordion [closeOthers]="true" activeIds="static-1">
+    <div class="panel panel-default"></div>
+      <ngb-panel id="static-1" title="2018">
+        <ng-template ngbPanelContent>
+          <p>April</p>
+            <div class="container">
+                <p>End- und Königschießen am 19. und 20. April 2018 im Schützenheim, jeweils ab 19.00 Uhr</p>
+                <p>Preisverteilung End- und Königschießen am 28. April 2018 ab 19.00 Uhr im Schützenheim</p>
+            </div>
+          <p>Mai</p>
+          <div class="container">
+                <p>Vatertagsfest am 10. Mai 2018 ab 11.00 Uhr im Schützenheim</p>
+            </div>
+          <p>Oktober</p>
+          <div class="container">
+                <p>Weinfest am 02.10.2018 ab 19.00 Uhr in der Turnhalle Neuhausen</p>
+            </div>
+          <p>November</p>
+          <div class="container">
+                <p>Jahreshauptversammlung am 24. November 2018 ab 19.00 Uhr im Schützenheim</p>
+            </div>
+           <p>Dezember</p>
+          <div class="container">
+                <p>Adventsfeier am 13. Dezember 2018 ab 19.00 Uhr im Schützenheim</p>
+                <p>Jahresabschlussfeier am 28. Dezember 2018 ab 18.00 Uhr im Schützenheim</p>
+            </div>
+        </ng-template>
+      </ngb-panel>
+  </ngb-accordion>
+</div> 
